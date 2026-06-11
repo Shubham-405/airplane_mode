@@ -7,7 +7,7 @@ app_license = "mit"
 
 # Apps
 # ------------------
-
+fixtures = ["Shop Type"]
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
@@ -165,7 +165,11 @@ app_license = "mit"
 # 		"airplane_mode.tasks.monthly"
 # 	],
 # }
-
+scheduler_events = {
+    "monthly": [
+        "airplane_mode.api.send_rent_reminders"
+    ]
+}
 # Testing
 # -------
 
